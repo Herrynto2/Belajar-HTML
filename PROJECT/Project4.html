@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Table</title>
+  </head>
+  <body>
+    <form>
+      <p>Makanan :
+        <select name="Pesanan">
+          <optgroup label="Makanan" >
+            <option value="soto-kudus">Soto Kudus</option>
+            <option value="tude-bakar" selected>Tude Bakar </option>
+            <option value="tempoyak-ikan">Tempoyak Ikan</option>
+            <option value="asinan-betawi">Asinan Betawi</option>
+            <option value="kerak-telor">Kerak Telor</option>
+            <option value="nasi-padang">Nasi Padang</option>
+          </optgroup>
+          <optgroup label="Minuman">
+            <option value="Tai-Tea">Tai Tea</option>
+            <option value="Milk-Coffe">Milk Cofe</option>
+            <option value="Crusher">Crusher</option>
+            <option value="Chatime">Chatime</option>
+          </optgroup>
+        </select>
+      </p>
+    </form>
+<hr>
+    <form>
+      <p>Makanan :
+        <select name="Pesanan" multiple>
+          <optgroup label="Minuman">
+            <option value="Tai-Tea">Tai Tea</option>
+            <option value="Milk-Coffe">Milk Cofe</option>
+            <option value="Crusher">Crusher</option>
+            <option value="Chatime">Chatime</option>
+          </optgroup>
+        </select>
+      </p>
+    </form>
+<hr>
+    <datalist id="listmakanan"> <!-- Datalist Element adalah sebuah data yang dijadikan sebuah referensi elemen input text, sehingga didalamnya memiliki sebuah suggestion / saran ketika kita mengetikkan sebuah karakter di dalamnya. -->
+      <option value="ayam-goreng">Ayam Goreng</option>
+      <option value="ayam-bakar">Ayam Bakar</option>
+      <option value="sate-padang">Sate Padang</option>
+      <option value="sate-madura">Sate Madura</option>
+      <option value="nasi-padang">Nasi Padang</option>
+    </datalist>
+    <form> <input type="text" list="listmakanan"> </form>
+<hr>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <caption>Table 1.1</caption>
+    <tr>
+       <th bgcolor="orange">No.</th>
+       <th bgcolor="orange" width="200">Nama Makanan</th>
+       <th bgcolor="orange"> Harga </th>
+     </tr>
+     <tr align="center">
+       <td>1</td>
+       <td>Soto Makasar</td>
+       <td>20.000</td>
+     </tr>
+     <tr align="center">
+       <td>2</td>
+       <td colspan="3">Nasi Goreng</td>
+     </tr>
+     <tr align="center">
+       <td rowspan="3">3</td>
+       <td>Bakso Bakar</td>
+       <td>2000</td>
+     </tr>
+     <tr align="center">
+       <td>Bakso Bandung</td>
+       <td>12000</td>
+     </tr>
+     <tr>
+       <tr>
+          <td>Ini Baris ke 3, Kolom ke 1</td>
+          <td>Ini Baris ke 3, Kolom ke 2</td>
+          <td>Ini Baris ke 3, Kolom ke 2 dan 3</td>
+       </tr>
+     </tr>
+    </table>
+<hr>
+    <table border="1">
+    <tr>
+       <td rowspan="2">Ini Baris ke 1 dan 2, Kolom ke 1</td>
+       <td>Ini Baris ke 1, Kolom ke 2</td>
+       <td>Ini Baris ke 1, Kolom ke 3</td>
+    </tr>
+    <tr>
+       <td>Ini Baris ke 2, Kolom ke 2</td>
+       <td>Ini Baris ke 2, Kolom ke 3</td>
+    </tr>
+    <tr>
+       <td>Ini Baris ke 3, Kolom ke 1</td>
+       <td>Ini Baris ke 3, Kolom ke 2</td>
+       <td>Ini Baris ke 3, Kolom ke 2 dan 3</td>
+    </tr>
+   </table>
+<hr>
+    <table border="1" cellpadding="2" cellspacing="0">
+     <thead> <!--  Sebagai Judul -->
+       <tr>
+         <th>No.</th>
+         <th>Nama Makanan</th>
+       </tr>
+     </thead>
+     <tbody> <!--  Sebagai Isi -->
+       <tr>
+         <td>1</td>
+         <td>Soto Makasar</td>
+       </tr>
+       <tr>
+         <td>2</td>
+         <td>Nasi Goreng</td>
+       </tr>
+     </tbody>
+     <tfoot> <!--  Sebagai Penutup -->
+       <tr>
+         <td colspan="2">Jumlah</td>
+       </tr>
+     </tfoot>
+    </table>
+<hr>
+<table border="1">
+<thead>
+  <tr>
+    <th>No.</th>
+    <th>Nama Makanan</th>
+    <th>image</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td>Soto Makasar</td>
+    <td><img src="soto-makasar.png" alt="gambar-soto" width="100"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Nasi Goreng</td>
+    <td><img src="nasi-goreng.jpg" alt="nasi-goreng" width="100"></td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="3">Jumlah</td>
+  </tr>
+</tfoot>
+</table>
+  </body>
+</html>
